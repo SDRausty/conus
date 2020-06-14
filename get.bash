@@ -4,7 +4,7 @@
 ################################################################################
 set -eu
 _CGEOS_() {
-	curl https://cdn.star.nesdis.noaa.gov/$GOES/ABI/FD/GEOCOLOR/1808x1808.jpg -o $(date +%s).1808x1808.$GOES.jpg 
+	curl "https://cdn.star.nesdis.noaa.gov/$GOES/ABI/FD/GEOCOLOR/1808x1808.jpg" -o "$(date +%s).1808x1808.$GOES.jpg"
 }
 
 _PRINTSIG_ () {
